@@ -1,1 +1,1 @@
-# Block-Inspect-and-Right-Click
+# JSProtectionSuite
