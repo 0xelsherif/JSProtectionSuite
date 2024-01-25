@@ -19,7 +19,7 @@ document.addEventListener('keydown', function (e) {
   if (e.ctrlKey && e.keyCode === 85) {
     e.preventDefault();
   }
-});
+
 // Block Ctrl + A, Ctrl + C, Ctrl + X
   if ((e.ctrlKey && e.keyCode === 65) ||
       (e.ctrlKey && e.keyCode === 67) ||
@@ -73,4 +73,11 @@ document.addEventListener('keydown', function (e) {
   if (e.keyCode === 44) {
     e.preventDefault();
   }
+});
+
+// Disable right-click on images
+document.querySelectorAll('img').forEach(function(img) {
+  img.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+  });
 });
